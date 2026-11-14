@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Krysha Stroy Taraz — кровля и еврозаборы в Таразе от производителя</title>
+<meta name="description" content="Металлочерепица, профнастил и железобетонные еврозаборы в Таразе напрямую от производителя. Доставка, монтаж, расчет сметы за 5 минут. +7 (705) 733-00-66">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: { sans: ['Manrope', 'system-ui', 'sans-serif'] },
+      colors: {
+        graphite: { DEFAULT: '#1E293B', 900: '#0F172A', 800: '#1E293B', 700: '#334155', 600: '#475569' },
+        terra: { DEFAULT: '#EA580C', 600: '#EA580C', 700: '#C2410C', 50: '#FFF7ED', 100: '#FFEDD5' },
+        wa: { DEFAULT: '#16A34A', 700: '#15803D' }
+      }
+    }
+  }
+}
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { -webkit-font-smoothing: antialiased; }
+  .section-anchor { scroll-margin-top: 84px; }
+  input[type=range] { -webkit-appearance: none; appearance: none; height: 8px; border-radius: 999px; background: #E2E8F0; outline: none; }
+  input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 26px; height: 26px; border-radius: 50%; background: #EA580C; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(234,88,12,.45); cursor: pointer; }
+  input[type=range]::-moz-range-thumb { width: 22px; height: 22px; border-radius: 50%; background: #EA580C; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(234,88,12,.45); cursor: pointer; }
+  .opt input:checked + label, .opt input:checked + div { border-color: #EA580C; background: #FFF7ED; color: #C2410C; }
+  .tab-active { background: #fff; color: #1E293B; box-shadow: 0 4px 14px rgba(15,23,42,.12); }
+  .wa-pulse::before { content: ''; position: absolute; inset: 0; border-radius: 999px; background: #16A34A; animation: pulse 2.2s infinite; z-index: -1; }
+  @keyframes pulse { 0% { transform: scale(1); opacity: .55 } 100% { transform: scale(1.7); opacity: 0 } }
+  .fade-up { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }
+  .fade-up.visible { opacity: 1; transform: none; }
+  .roof-pattern { background-image: repeating-linear-gradient(135deg, rgba(255,255,255,.035) 0 2px, transparent 2px 22px); }
+</style>
+</head>
+<body class="font-sans text-graphite bg-slate-50">
+
+<!-- SVG-шаблоны текстур (используются в карточках) -->
+<svg width="0" height="0" class="absolute" aria-hidden="true">
+  <defs>
+    <pattern id="p-stone" width="80" height="50" patternUnits="userSpaceOnUse">
+      <rect width="80" height="50" fill="#9CA3AF"/>
+      <path d="M0 0h34l-4 18H0z" fill="#A8AFB8"/><path d="M36 0h44v14H40z" fill="#8F97A1"/>
+      <path d="M0 20h28l6 14-8 16H0z" fill="#8C939D"/><path d="M32 18h22l-4 16H36z" fill="#B0B6BE"/>
+      <path d="M56 16h24v20H52z" fill="#9AA1AA"/><path d="M28 36h24l-2 14H22z" fill="#A3AAB3"/>
+      <path d="M54 38h26v12H52z" fill="#878F99"/>
+      <g stroke="#6B7280" stroke-width="1.5" fill="none" opacity=".7"><path d="M0 0h34l-4 18H0M36 0h44M40 14h40M28 20l6 14-8 16M32 18h22l-4 16H36zM56 16h24M52 36h28M22 50l6-14h24l-2 14M54 38h26"/></g>
+    </pattern>
+    <pattern id="p-brick" width="60" height="30" patternUnits="userSpaceOnUse">
+      <rect width="60" height="30" fill="#B45309"/>
+      <rect x="1" y="1" width="27" height="13" rx="1" fill="#C2410C"/><rect x="31" y="1" width="28" height="13" rx="1" fill="#9A3412"/>
+      <rect x="-14" y="16" width="27" height="13" rx="1" fill="#B9461A"/><rect x="16" y="16" width="28" height="13" rx="1" fill="#C55222"/><rect x="47" y="16" width="27" height="13" rx="1" fill="#A33B12"/>
+    </pattern>
+    <pattern id="p-brick-gray" width="60" height="30" patternUnits="userSpaceOnUse">
+      <rect width="60" height="30" fill="#7B8591"/>
+      <rect x="1" y="1" width="27" height="13" rx="1" fill="#A0A8B2"/><rect x="31" y="1" width="28" height="13" rx="1" fill="#959DA8"/>
+      <rect x="-14" y="16" width="27" height="13" rx="1" fill="#9AA2AC"/><rect x="16" y="16" width="28" height="13" rx="1" fill="#A6AEB7"/><rect x="47" y="16" width="27" height="13" rx="1" fill="#8F97A2"/>
+    </pattern>
+    <pattern id="p-classic" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="40" height="40" fill="#B8BEC6"/><circle cx="8" cy="9" r="1" fill="#A1A8B1"/><circle cx="27" cy="21" r="1.2" fill="#A1A8B1"/><circle cx="16" cy="33" r=".9" fill="#A1A8B1"/><circle cx="34" cy="6" r=".8" fill="#C9CED4"/>
+    </pattern>
+    <pattern id="p-tile" width="44" height="26" patternUnits="userSpaceOnUse">
+      <rect width="44" height="26" fill="#8E2A12"/>
+      <path d="M0 0q11 22 22 0q11 22 22 0v26H0z" fill="#A6341A"/>
+      <path d="M0 0q11 22 22 0q11 22 22 0" stroke="#6E1F0D" stroke-width="2" fill="none"/>
+    </pattern>
+    <pattern id="p-tile-graphite" width="44" height="26" patternUnits="userSpaceOnUse">
+      <rect width="44" height="26" fill="#2B3442"/>
+      <path d="M0 0q11 22 22 0q11 22 22 0v26H0z" fill="#3A4556"/>
+      <path d="M0 0q11 22 22 0q11 22 22 0" stroke="#1A202B" stroke-width="2" fill="none"/>
+    </pattern>
+    <pattern id="p-tile-green" width="44" height="26" patternUnits="userSpaceOnUse">
+      <rect width="44" height="26" fill="#1F4D3A"/>
+      <path d="M0 0q11 22 22 0q11 22 22 0v26H0z" fill="#2A6149"/>
+      <path d="M0 0q11 22 22 0q11 22 22 0" stroke="#143326" stroke-width="2" fill="none"/>
+    </pattern>
+    <pattern id="p-prof" width="36" height="20" patternUnits="userSpaceOnUse">
+      <rect width="36" height="20" fill="#5B6B80"/><path d="M0 0h8l4 20H0z" fill="#728399"/><path d="M18 0h8l4 20H18z" fill="#728399"/><path d="M12 0h6v20h-6z" fill="#4B5A6D"/><path d="M30 0h6v20h-6z" fill="#4B5A6D"/>
+    </pattern>
+  </defs>
+</svg>
+
+<!-- ============ HEADER ============ -->
+<header id="top" class="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-slate-200">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 h-[72px] flex items-center justify-between gap-4">
+    <a href="#top" class="flex items-center gap-2.5 shrink-0" aria-label="Krysha Stroy Taraz — на главную">
+      <span class="w-10 h-10 rounded-xl bg-graphite flex items-center justify-center">
+        <svg viewBox="0 0 40 40" class="w-7 h-7" fill="none" aria-hidden="true">
+          <path d="M5 19 20 7l15 12" stroke="#EA580C" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M9 23v10M16 23v10M24 23v10M31 23v10" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/>
+          <path d="M7 26h26M7 31h26" stroke="#94A3B8" stroke-width="1.6"/>
+        </svg>
+      </span>
+      <span class="leading-tight">
+        <span class="block font-extrabold text-[17px] tracking-tight">Krysha Stroy</span>
+        <span class="block text-[11px] font-bold tracking-[0.22em] text-terra uppercase">Taraz</span>
+      </span>
+    </a>
+
+    <nav class="hidden lg:flex items-center gap-7 text-[15px] font-semibold text-graphite-700">
+      <a href="#catalog" class="hover:text-terra transition">Каталог</a>
+      <a href="#calculator" class="hover:text-terra transition">Калькулятор</a>
+      <a href="#works" class="hover:text-terra transition">Наши работы</a>
+      <a href="#contacts" class="hover:text-terra transition">Контакты</a>
+    </nav>
+
+    <div class="flex items-center gap-3">
+      <a href="tel:+77057330066" class="hidden md:flex flex-col items-end leading-tight">
+        <span class="font-extrabold text-[17px] hover:text-terra transition">+7 (705) 733-00-66</span>
+        <span class="text-xs text-slate-500 flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-wa"></span>Прием заявок 24/7</span>
+      </a>
+      <a data-wa="header" href="#" class="hidden sm:inline-flex items-center gap-2 bg-wa hover:bg-wa-700 text-white font-bold text-sm px-4 py-2.5 rounded-xl transition shadow-sm">
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.8h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.9-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.89 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.16-3.48-8.41"/></svg>
+        Написать в WhatsApp
+      </a>
+      <button id="burger" class="lg:hidden w-11 h-11 rounded-xl border border-slate-200 flex items-center justify-center" aria-label="Открыть меню" aria-expanded="false">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+  <!-- мобильное меню -->
+  <div id="mobileMenu" class="lg:hidden hidden border-t border-slate-200 bg-white">
+    <nav class="px-4 py-4 flex flex-col gap-1 font-semibold">
+      <a href="#catalog" class="py-3 px-3 rounded-lg hover:bg-slate-100">Каталог</a>
+      <a href="#calculator" class="py-3 px-3 rounded-lg hover:bg-slate-100">Калькулятор</a>
+      <a href="#works" class="py-3 px-3 rounded-lg hover:bg-slate-100">Наши работы</a>
+      <a href="#contacts" class="py-3 px-3 rounded-lg hover:bg-slate-100">Контакты</a>
+      <a href="tel:+77057330066" class="mt-2 py-3 px-3 rounded-lg bg-slate-100 font-extrabold">📞 +7 (705) 733-00-66</a>
+      <a data-wa="header" href="#" class="py-3 px-3 rounded-lg bg-wa text-white text-center font-bold">Написать в WhatsApp</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<!-- ============ HERO ============ -->
+<section class="relative overflow-hidden bg-graphite text-white roof-pattern">
+  <div class="absolute -right-40 -top-40 w-[520px] h-[520px] rounded-full bg-terra/20 blur-3xl"></div>
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 py-14 sm:py-20 lg:py-24 grid lg:grid-cols-[1.1fr_1fr] gap-12 items-center">
+    <div>
+      <div class="inline-flex items-center gap-2 bg-white/10 border border-white/15 rounded-full px-3.5 py-1.5 text-sm font-semibold mb-6">
+        <span class="w-2 h-2 rounded-full bg-terra"></span> Собственное производство в Таразе
+      </div>
+      <h1 class="text-[32px] leading-[1.12] sm:text-5xl lg:text-[54px] font-extrabold tracking-tight">
+        Надежная кровля и эстетичные еврозаборы в Таразе <span class="text-terra">напрямую от производителя</span>
+      </h1>
+      <p class="mt-6 text-lg sm:text-xl text-slate-300 max-w-xl leading-relaxed">
+        Металлочерепица, профнастил и железобетонные заборы с доставкой и установкой. Расчет сметы за 5 минут.
+      </p>
+      <div class="mt-8 flex flex-col sm:flex-row gap-3">
+        <a href="#calculator" class="inline-flex justify-center items-center gap-2 bg-terra hover:bg-terra-700 text-white font-bold text-lg px-7 py-4 rounded-2xl transition shadow-lg shadow-terra/30">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 11h2M12 11h2M16 11h0M8 15h2M12 15h2M8 18h2M12 18h4"/></svg>
+          Рассчитать стоимость
+        </a>
+        <a data-wa="price" href="#" class="inline-flex justify-center items-center gap-2 bg-wa hover:bg-wa-700 text-white font-bold text-lg px-7 py-4 rounded-2xl transition">
+          <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.8h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.450 4.44-9.88 9.9-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.440 9.88-9.89 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.16-3.48-8.41"/></svg>
+          Получить прайс в WhatsApp
+        </a>
+      </div>
+      <ul class="mt-10 grid sm:grid-cols-3 gap-4">
+        <li class="flex items-start gap-3">
+          <span class="w-10 h-10 shrink-0 rounded-xl bg-white/10 flex items-center justify-center text-terra">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 21h18M5 21V10l5 3V10l5 3V6l4 2v13"/></svg>
+          </span>
+          <span class="font-semibold leading-snug">Собственное производство</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="w-10 h-10 shrink-0 rounded-xl bg-white/10 flex items-center justify-center text-terra">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg>
+          </span>
+          <span class="font-semibold leading-snug">Гарантия на материалы</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="w-10 h-10 shrink-0 rounded-xl bg-white/10 flex items-center justify-center text-terra">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg>
+          </span>
+          <span class="font-semibold leading-snug">Замер и доставка по Таразу и области</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Иллюстрация: дом с крышей и еврозабором -->
+    <div class="relative">
+      <div class="rounded-[28px] overflow-hidden border border-white/10 shadow-2xl bg-gradient-to-b from-sky-300 to-sky-100">
+        <svg viewBox="0 0 560 420" class="w-full h-auto block" role="img" aria-label="Дом с металлочерепицей и еврозабором">
+          <circle cx="470" cy="70" r="34" fill="#FDE68A"/>
+          <path d="M0 300 Q140 250 280 290 T560 270 V420 H0z" fill="#CBD5C0"/>
+          <!-- дом -->
+          <rect x="150" y="170" width="260" height="150" fill="#F1E9DC"/>
+          <polygon points="125,178 280,72 435,178" fill="url(#p-tile)"/>
+          <polygon points="125,178 280,72 435,178" fill="none" stroke="#6E1F0D" stroke-width="4" stroke-linejoin="round"/>
+          <rect x="120" y="172" width="320" height="10" rx="3" fill="#6E1F0D"/>
+          <rect x="340" y="88" width="26" height="50" fill="#8B5E3C"/>
+          <rect x="185" y="205" width="62" height="54" rx="4" fill="#7DD3FC" stroke="#fff" stroke-width="6"/>
+          <rect x="315" y="205" width="62" height="54" rx="4" fill="#7DD3FC" stroke="#fff" stroke-width="6"/>
+          <rect x="255" y="240" width="50" height="80" rx="3" fill="#7C4A2D"/>
+          <!-- забор -->
+          <g>
+            <rect x="0" y="282" width="560" height="98" fill="url(#p-stone)"/>
+            <rect x="0" y="282" width="560" height="98" fill="none" stroke="#6B7280" stroke-width="1"/>
+            <g fill="#6B7280">
+              <rect x="0" y="270" width="20" height="120"/><rect x="134" y="270" width="20" height="120"/><rect x="268" y="270" width="20" height="120"/><rect x="402" y="270" width="20" height="120"/><rect x="540" y="270" width="20" height="120"/>
+            </g>
+            <g fill="#4B5563"><rect x="-2" y="264" width="24" height="8" rx="2"/><rect x="132" y="264" width="24" height="8" rx="2"/><rect x="266" y="264" width="24" height="8" rx="2"/><rect x="400" y="264" width="24" height="8" rx="2"/><rect x="538" y="264" width="24" height="8" rx="2"/></g>
+            <g stroke="#7B828C" stroke-width="1.4"><path d="M20 306h114M154 306h114M288 306h114M422 306h118M20 331h114M154 331h114M288 331h114M422 331h118M20 356h114M154 356h114M288 356h114M422 356h118"/></g>
+          </g>
+          <rect x="0" y="380" width="560" height="40" fill="#A3A08F"/>
+        </svg>
+      </div>
+      <div class="absolute -bottom-5 -left-3 sm:-left-6 bg-white text-graphite rounded-2xl shadow-xl px-5 py-4 flex items-center gap-3">
+        <span class="w-11 h-11 rounded-xl bg-terra-50 text-terra flex items-center justify-center font-extrabold">₸</span>
+        <span class="leading-tight"><span class="block text-xs text-slate-500 font-semibold">Цены производителя</span><span class="block font-extrabold">без посредников</span></span>
+      </div>
+      <div class="absolute -top-4 right-2 sm:-right-4 bg-white text-graphite rounded-2xl shadow-xl px-4 py-3 text-sm font-bold flex items-center gap-2">
+        <span class="w-2.5 h-2.5 rounded-full bg-wa"></span> Ответим в WhatsApp за 5 минут
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CALCULATOR ============ -->
+<section id="calculator" class="section-anchor py-16 sm:py-24">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="max-w-2xl fade-up">
+      <p class="text-terra font-bold uppercase tracking-widest text-sm">Калькулятор стоимости</p>
+      <h2 class="mt-3 text-3xl sm:text-4xl font-extrabold tracking-tight">Посчитайте забор или кровлю за минуту</h2>
+      <p class="mt-4 text-slate-600 text-lg">Выберите параметры — расчет обновится сразу. Отправьте его менеджеру в WhatsApp, и мы пришлем точную смету после бесплатного замера.</p>
+    </div>
+
+    <div class="mt-10 bg-white rounded-[28px] shadow-xl shadow-slate-200/70 border border-slate-200 overflow-hidden fade-up">
+      <!-- табы -->
+      <div class="p-2 sm:p-3 bg-slate-100 flex gap-2" role="tablist">
+        <button role="tab" data-calc-tab="fence" class="calc-tab tab-active flex-1 flex items-center justify-center gap-2 py-3.5 rounded-2xl font-bold text-[15px] sm:text-base transition text-slate-500">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 8h18v12H3zM3 12h18M3 16h18M7 4v4M17 4v4"/></svg>
+          Рассчитать Еврозабор
+        </button>
+        <button role="tab" data-calc-tab="roof" class="calc-tab flex-1 flex items-center justify-center gap-2 py-3.5 rounded-2xl font-bold text-[15px] sm:text-base transition text-slate-500">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M2 12 12 4l10 8M5 10v10h14V10"/></svg>
+          Рассчитать Кровлю
+        </button>
+      </div>
+
+      <div class="grid lg:grid-cols-[1.25fr_1fr]">
+        <!-- ПАРАМЕТРЫ -->
+        <div class="p-6 sm:p-10">
+          <!-- Еврозабор -->
+          <div id="calc-fence" class="space-y-8">
+            <div>
+              <div class="flex items-end justify-between gap-4">
+                <label for="fenceLength" class="font-bold text-lg">Длина забора</label>
+                <div class="flex items-center gap-2">
+                  <input id="fenceLengthNum" type="number" min="10" max="200" value="50" class="w-20 text-right font-extrabold text-2xl border-b-2 border-slate-200 focus:border-terra outline-none" aria-label="Длина забора в метрах">
+                  <span class="font-bold text-slate-500">м</span>
+                </div>
+              </div>
+              <input id="fenceLength" type="range" min="10" max="200" step="1" value="50" class="w-full mt-5">
+              <div class="flex justify-between text-xs text-slate-400 font-semibold mt-2"><span>10 м</span><span>50</span><span>100</span><span>150</span><span>200 м</span></div>
+            </div>
+
+            <div>
+              <p class="font-bold text-lg mb-3">Высота забора</p>
+              <div class="grid grid-cols-2 gap-3">
+                <div class="opt">
+                  <input type="radio" name="fenceHeight" id="h15" value="1.5" class="peer sr-only">
+                  <label for="h15" class="block cursor-pointer border-2 border-slate-200 rounded-2xl p-4 transition hover:border-slate-300">
+                    <span class="block font-extrabold text-xl">1,5 м</span>
+                    <span class="block text-sm text-slate-500 mt-0.5">3 плиты в пролете</span>
+                  </label>
+                </div>
+                <div class="opt">
+                  <input type="radio" name="fenceHeight" id="h20" value="2" class="peer sr-only" checked>
+                  <label for="h20" class="block cursor-pointer border-2 border-slate-200 rounded-2xl p-4 transition hover:border-slate-300">
+                    <span class="block font-extrabold text-xl">2,0 м</span>
+                    <span class="block text-sm text-slate-500 mt-0.5">4 плиты в пролете</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <p class="font-bold text-lg mb-3">Текстура</p>
+              <select id="fenceTexture" class="w-full border-2 border-slate-200 rounded-2xl px-4 py-3.5 font-semibold bg-white focus:border-terra outline-none">
+                <option value="Сланец / Дикий камень">Сланец / Дикий камень</option>
+                <option value="Кирпичная кладка">Кирпичная кладка</option>
+                <option value="Ажурный верх">Ажурный верх</option>
+                <option value="Классика">Классика (гладкая)</option>
+              </select>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-3">
+              <label class="flex items-start gap-3 border-2 border-slate-200 rounded-2xl p-4 cursor-pointer hover:border-slate-300 transition has-[:checked]:border-terra has-[:checked]:bg-terra-50">
+                <input id="fenceInstall" type="checkbox" class="mt-1 w-5 h-5 accent-[#EA580C]" checked>
+                <span><span class="block font-bold">Нужна установка под ключ</span><span class="block text-sm text-slate-500">Разметка, бурение, бетонирование столбов, сборка</span></span>
+              </label>
+              <label class="flex items-start gap-3 border-2 border-slate-200 rounded-2xl p-4 cursor-pointer hover:border-slate-300 transition has-[:checked]:border-terra has-[:checked]:bg-terra-50">
+                <input id="fencePaint" type="checkbox" class="mt-1 w-5 h-5 accent-[#EA580C]">
+                <span><span class="block font-bold">С покраской</span><span class="block text-sm text-slate-500">Фасадная краска в 2 слоя, цвет на выбор</span></span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Кровля -->
+          <div id="calc-roof" class="space-y-8 hidden">
+            <div>
+              <p class="font-bold text-lg mb-3">Тип кровли</p>
+              <div class="grid grid-cols-2 gap-3">
+                <div class="opt">
+                  <input type="radio" name="roofType" id="rt1" value="tile" class="peer sr-only" checked>
+                  <label for="rt1" class="block cursor-pointer border-2 border-slate-200 rounded-2xl p-4 transition hover:border-slate-300">
+                    <svg viewBox="0 0 120 44" class="w-full h-10 rounded-lg mb-3"><rect width="120" height="44" fill="url(#p-tile)"/></svg>
+                    <span class="block font-extrabold">Металлочерепица</span>
+                    <span class="block text-sm text-slate-500 mt-0.5">Монтеррей, 0,45–0,5 мм</span>
+                  </label>
+                </div>
+                <div class="opt">
+                  <input type="radio" name="roofType" id="rt2" value="prof" class="peer sr-only">
+                  <label for="rt2" class="block cursor-pointer border-2 border-slate-200 rounded-2xl p-4 transition hover:border-slate-300">
+                    <svg viewBox="0 0 120 44" class="w-full h-10 rounded-lg mb-3"><rect width="120" height="44" fill="url(#p-prof)"/></svg>
+                    <span class="block font-extrabold">Профнастил</span>
+                    <span class="block text-sm text-slate-500 mt-0.5">С-8 / С-21, 0,4–0,5 мм</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <label for="roofArea" class="font-bold text-lg block mb-3">Площадь крыши</label>
+              <div class="relative">
+                <input id="roofArea" type="number" min="1" max="5000" value="120" inputmode="decimal" class="w-full border-2 border-slate-200 rounded-2xl px-4 py-4 pr-14 font-extrabold text-2xl focus:border-terra outline-none">
+                <span class="absolute right-5 top-1/2 -translate-y-1/2 font-bold text-slate-500">м²</span>
+              </div>
+              <div class="flex flex-wrap gap-2 mt-3">
+                <button type="button" data-area="60" class="area-chip px-3.5 py-1.5 rounded-full bg-slate-100 hover:bg-slate-200 text-sm font-semibold">Баня, гараж · 60</button>
+                <button type="button" data-area="120" class="area-chip px-3.5 py-1.5 rounded-full bg-slate-100 hover:bg-slate-200 text-sm font-semibold">Дом · 120</button>
+                <button type="button" data-area="200" class="area-chip px-3.5 py-1.5 rounded-full bg-slate-100 hover:bg-slate-200 text-sm font-semibold">Большой дом · 200</button>
+              </div>
+              <p class="text-sm text-slate-500 mt-3">Не знаете площадь? Укажите примерно — точную цифру посчитаем на бесплатном замере.</p>
+            </div>
+
+            <label class="flex items-start gap-3 border-2 border-slate-200 rounded-2xl p-4 cursor-pointer hover:border-slate-300 transition has-[:checked]:border-terra has-[:checked]:bg-terra-50">
+              <input id="roofExtras" type="checkbox" class="mt-1 w-5 h-5 accent-[#EA580C]" checked>
+              <span><span class="block font-bold">Доборные элементы</span><span class="block text-sm text-slate-500">Коньки, ветровые и карнизные планки, ендовы, саморезы</span></span>
+            </label>
+
+            <label class="flex items-start gap-3 border-2 border-slate-200 rounded-2xl p-4 cursor-pointer hover:border-slate-300 transition has-[:checked]:border-terra has-[:checked]:bg-terra-50">
+              <input id="roofInstall" type="checkbox" class="mt-1 w-5 h-5 accent-[#EA580C]">
+              <span><span class="block font-bold">Нужен монтаж кровли</span><span class="block text-sm text-slate-500">Укладка листов и доборных элементов нашей бригадой</span></span>
+            </label>
+          </div>
+        </div>
+
+        <!-- РЕЗУЛЬТАТ -->
+        <div class="bg-graphite text-white p-6 sm:p-10 flex flex-col">
+          <div class="flex items-center justify-between">
+            <p class="font-bold text-slate-300">Ваш расчет</p>
+            <span class="text-[11px] font-bold uppercase tracking-wider bg-terra/20 text-orange-300 px-2.5 py-1 rounded-full">предварительный расчет</span>
+          </div>
+
+          <dl id="resultList" class="mt-6 space-y-3 text-[15px]"></dl>
+
+          <div class="mt-6 pt-6 border-t border-white/15">
+            <p class="text-slate-400 text-sm font-semibold">Ориентировочная стоимость</p>
+            <p class="mt-1 text-4xl sm:text-[44px] font-extrabold tracking-tight"><span id="totalSum">0</span> <span class="text-terra">₸</span></p>
+            <p class="text-xs text-slate-400 mt-2 leading-relaxed">Точная цена зависит от рельефа участка, грунта, сложности крыши и выбранного цвета. Окончательную смету менеджер пришлет после бесплатного замера.</p>
+          </div>
+
+          <a id="sendCalc" href="#" class="mt-8 inline-flex justify-center items-center gap-2.5 bg-wa hover:bg-wa-700 text-white font-bold text-lg px-6 py-4 rounded-2xl transition">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.070-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.050 21.8h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.9-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.89 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.16-3.48-8.41"/></svg>
+            Отправить расчет менеджеру в WhatsApp
+          </a>
+          <p class="text-center text-xs text-slate-400 mt-3">Откроется WhatsApp с готовым сообщением — просто нажмите «Отправить»</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CATALOG ============ -->
+<section id="catalog" class="section-anchor py-16 sm:py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 fade-up">
+      <div class="max-w-2xl">
+        <p class="text-terra font-bold uppercase tracking-widest text-sm">Каталог продукции</p>
+        <h2 class="mt-3 text-3xl sm:text-4xl font-extrabold tracking-tight">Еврозаборы и кровля собственного производства</h2>
+      </div>
+      <div class="inline-flex p-1.5 bg-slate-100 rounded-2xl self-start" role="tablist">
+        <button data-cat="all" class="cat-tab tab-active px-4 sm:px-5 py-2.5 rounded-xl font-bold text-sm sm:text-[15px] text-slate-500 transition">Все</button>
+        <button data-cat="fence" class="cat-tab px-4 sm:px-5 py-2.5 rounded-xl font-bold text-sm sm:text-[15px] text-slate-500 transition">Еврозаборы</button>
+        <button data-cat="roof" class="cat-tab px-4 sm:px-5 py-2.5 rounded-xl font-bold text-sm sm:text-[15px] text-slate-500 transition">Кровля</button>
+      </div>
+    </div>
+
+    <div id="catalogGrid" class="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-5"></div>
+
+    <div class="mt-10 rounded-3xl bg-terra-50 border border-terra-100 p-6 sm:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-5 fade-up">
+      <div>
+        <p class="font-extrabold text-xl">Серые плиты под покраску или уже окрашенные</p>
+        <p class="text-slate-600 mt-1">Металл кровли — любые цвета по каталогу RAL: вишня 3005, шоколад 8017, графит 7024, зеленый 6005 и другие.</p>
+      </div>
+      <a data-wa="catalog" href="#" class="shrink-0 inline-flex items-center gap-2 bg-graphite hover:bg-graphite-900 text-white font-bold px-6 py-3.5 rounded-2xl transition">Запросить каталог цветов →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY US ============ -->
+<section class="py-16 sm:py-24 bg-graphite text-white roof-pattern">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="max-w-2xl fade-up">
+      <p class="text-terra font-bold uppercase tracking-widest text-sm">Почему выбирают нас</p>
+      <h2 class="mt-3 text-3xl sm:text-4xl font-extrabold tracking-tight">Делаем так, чтобы не пришлось переделывать</h2>
+      <p class="mt-4 text-slate-300 text-lg">Знаем, чего боятся заказчики: трещин после первой зимы, щелей в кровле и «тонкого» металла. Поэтому контролируем всё сами — от замеса бетона до монтажа.</p>
+    </div>
+    <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div class="fade-up bg-white/5 border border-white/10 rounded-3xl p-7 hover:bg-white/10 transition">
+        <span class="w-14 h-14 rounded-2xl bg-terra flex items-center justify-center">
+          <svg class="w-7 h-7" fill="none" stroke="#fff" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M3 10h18M3 14h18M8 5v14M16 5v14"/></svg>
+        </span>
+        <h3 class="mt-6 font-extrabold text-xl">Армированный бетон высокой марки</h3>
+        <p class="mt-3 text-slate-300 leading-relaxed">Плиты с металлическим каркасом не трескаются ни в 40-градусную жару, ни в мороз. Забор стоит десятилетиями.</p>
+      </div>
+      <div class="fade-up bg-white/5 border border-white/10 rounded-3xl p-7 hover:bg-white/10 transition">
+        <span class="w-14 h-14 rounded-2xl bg-terra flex items-center justify-center">
+          <svg class="w-7 h-7" fill="none" stroke="#fff" stroke-width="2" viewBox="0 0 24 24"><path d="M3 17 9 7l6 10 6-10"/><path d="M3 21h18"/></svg>
+        </span>
+        <h3 class="mt-6 font-extrabold text-xl">Точная геометрия листов</h3>
+        <p class="mt-3 text-slate-300 leading-relaxed">Листы кровли прокатываются на точном оборудовании — стыки ложатся без зазоров, крыша не протекает.</p>
+      </div>
+      <div class="fade-up bg-white/5 border border-white/10 rounded-3xl p-7 hover:bg-white/10 transition">
+        <span class="w-14 h-14 rounded-2xl bg-terra flex items-center justify-center">
+          <svg class="w-7 h-7" fill="none" stroke="#fff" stroke-width="2" viewBox="0 0 24 24"><path d="M4 12h3M17 12h3M7 8v8M17 8v8M10 12h4"/><path d="M12 4v4M12 16v4"/></svg>
+        </span>
+        <h3 class="mt-6 font-extrabold text-xl">Честная толщина металла</h3>
+        <p class="mt-3 text-slate-300 leading-relaxed">Заявили 0,5 мм — значит 0,5 мм. Можете проверить микрометром прямо при отгрузке.</p>
+      </div>
+      <div class="fade-up bg-white/5 border border-white/10 rounded-3xl p-7 hover:bg-white/10 transition">
+        <span class="w-14 h-14 rounded-2xl bg-terra flex items-center justify-center">
+          <svg class="w-7 h-7" fill="none" stroke="#fff" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9 8h6M9 11h6M12 11v6"/></svg>
+        </span>
+        <h3 class="mt-6 font-extrabold text-xl">Без посредников</h3>
+        <p class="mt-3 text-slate-300 leading-relaxed">Продаем напрямую с производства, поэтому цена ниже рыночной — без наценок перекупщиков и магазинов.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section id="works" class="section-anchor py-16 sm:py-24">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="max-w-2xl fade-up">
+      <p class="text-terra font-bold uppercase tracking-widest text-sm">Наши работы в Таразе</p>
+      <h2 class="mt-3 text-3xl sm:text-4xl font-extrabold tracking-tight">Объекты, которые мы уже сдали</h2>
+      <p class="mt-4 text-slate-600 text-lg">Частные дома и дворы в Таразе и Жамбылской области. Больше фото и видео — пришлем в WhatsApp.</p>
+    </div>
+    <div id="worksGrid" class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-5"></div>
+  </div>
+</section>
+
+<!-- ============ STEPS ============ -->
+<section class="py-16 sm:py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="max-w-2xl fade-up">
+      <p class="text-terra font-bold uppercase tracking-widest text-sm">Как мы работаем</p>
+      <h2 class="mt-3 text-3xl sm:text-4xl font-extrabold tracking-tight">4 простых шага до готового забора или крыши</h2>
+    </div>
+    <ol class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-5 relative">
+      <li class="fade-up relative bg-slate-50 border border-slate-200 rounded-3xl p-7">
+        <span class="text-6xl font-extrabold text-terra/20 leading-none">01</span>
+        <h3 class="mt-4 font-extrabold text-xl">Заявка или звонок</h3>
+        <p class="mt-2 text-slate-600">Позвоните или напишите в WhatsApp — заявки принимаем 24/7.</p>
+      </li>
+      <li class="fade-up relative bg-slate-50 border border-slate-200 rounded-3xl p-7">
+        <span class="text-6xl font-extrabold text-terra/20 leading-none">02</span>
+        <h3 class="mt-4 font-extrabold text-xl">Бесплатный замер и точный расчет</h3>
+        <p class="mt-2 text-slate-600">Приедем на участок, все измерим и составим смету без скрытых доплат.</p>
+      </li>
+      <li class="fade-up relative bg-slate-50 border border-slate-200 rounded-3xl p-7">
+        <span class="text-6xl font-extrabold text-terra/20 leading-none">03</span>
+        <h3 class="mt-4 font-extrabold text-xl">Производство и комплектация</h3>
+        <p class="mt-2 text-slate-600">Изготавливаем плиты и листы под ваш объект, собираем полный комплект.</p>
+      </li>
+      <li class="fade-up relative bg-terra text-white rounded-3xl p-7">
+        <span class="text-6xl font-extrabold text-white/25 leading-none">04</span>
+        <h3 class="mt-4 font-extrabold text-xl">Доставка и монтаж на участке</h3>
+        <p class="mt-2 text-orange-50">Привозим своим транспортом и устанавливаем. Вы принимаете готовую работу.</p>
+      </li>
+    </ol>
+    <div class="mt-10 text-center fade-up">
+      <a data-wa="zamer" href="#" class="inline-flex items-center gap-2 bg-wa hover:bg-wa-700 text-white font-bold text-lg px-8 py-4 rounded-2xl transition">Вызвать замерщика бесплатно</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACTS ============ -->
+<section id="contacts" class="section-anchor py-16 sm:py-24">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 grid lg:grid-cols-[1fr_1.3fr] gap-8 items-stretch">
+    <div class="fade-up bg-graphite text-white rounded-[28px] p-8 sm:p-10 flex flex-col">
+      <p class="text-terra font-bold uppercase tracking-widest text-sm">Контакты</p>
+      <h2 class="mt-3 text-3xl font-extrabold tracking-tight">Приезжайте на производство или напишите нам</h2>
+      <ul class="mt-8 space-y-6">
+        <li class="flex gap-4">
+          <span class="w-12 h-12 shrink-0 rounded-2xl bg-white/10 flex items-center justify-center text-terra"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
+          <span><span class="block text-slate-400 text-sm font-semibold">Адрес</span><span class="block font-bold text-lg">г. Тараз, ул. Сыпатай батыра, 2К</span></span>
+        </li>
+        <li class="flex gap-4">
+          <span class="w-12 h-12 shrink-0 rounded-2xl bg-white/10 flex items-center justify-center text-terra"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span>
+          <span><span class="block text-slate-400 text-sm font-semibold">Телефон / WhatsApp</span><a href="tel:+77057330066" class="block font-bold text-lg hover:text-terra transition">+7 (705) 733-00-66</a></span>
+        </li>
+        <li class="flex gap-4">
+          <span class="w-12 h-12 shrink-0 rounded-2xl bg-white/10 flex items-center justify-center text-terra"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+          <span><span class="block text-slate-400 text-sm font-semibold">Режим работы</span><span class="block font-bold text-lg">Прием заявок 24/7</span></span>
+        </li>
+      </ul>
+      <div class="mt-auto pt-10 flex flex-col sm:flex-row gap-3">
+        <a data-wa="contacts" href="#" class="flex-1 inline-flex justify-center items-center gap-2 bg-wa hover:bg-wa-700 text-white font-bold px-6 py-4 rounded-2xl transition">Написать в WhatsApp</a>
+        <a href="tel:+77057330066" class="flex-1 inline-flex justify-center items-center gap-2 bg-white/10 hover:bg-white/20 font-bold px-6 py-4 rounded-2xl transition">Позвонить</a>
+      </div>
+    </div>
+
+    <!-- Блок под карту -->
+    <div class="fade-up relative rounded-[28px] overflow-hidden border border-slate-200 bg-[#EEF1EC] min-h-[380px]">
+      <svg viewBox="0 0 700 480" preserveAspectRatio="xMidYMid slice" class="absolute inset-0 w-full h-full" aria-hidden="true">
+        <rect width="700" height="480" fill="#EEF1EC"/>
+        <g fill="#E1E6DE"><rect x="30" y="30" width="150" height="110" rx="6"/><rect x="220" y="30" width="190" height="110" rx="6"/><rect x="450" y="30" width="220" height="110" rx="6"/><rect x="30" y="190" width="150" height="120" rx="6"/><rect x="450" y="190" width="220" height="120" rx="6"/><rect x="30" y="360" width="150" height="100" rx="6"/><rect x="220" y="360" width="190" height="100" rx="6"/><rect x="450" y="360" width="220" height="100" rx="6"/></g>
+        <rect x="220" y="190" width="190" height="120" rx="6" fill="#D8E8CF"/>
+        <path d="M0 160h700M0 335h700" stroke="#fff" stroke-width="26"/>
+        <path d="M200 0v480M430 0v480" stroke="#fff" stroke-width="20"/>
+        <path d="M0 160h700" stroke="#FCD34D" stroke-width="8" opacity=".7"/>
+        <path d="M560 0 C540 120 600 250 690 480" stroke="#BFDBFE" stroke-width="18" fill="none"/>
+        <text x="20" y="152" font-family="Manrope, sans-serif" font-size="14" font-weight="700" fill="#64748B">ул. Сыпатай батыра</text>
+      </svg>
+      <div class="absolute left-1/2 top-[48%] -translate-x-1/2 -translate-y-full flex flex-col items-center">
+        <div class="bg-white rounded-2xl shadow-xl px-4 py-3 mb-2 text-center">
+          <p class="font-extrabold text-sm">Krysha Stroy Taraz</p>
+          <p class="text-xs text-slate-500">ул. Сыпатай батыра, 2К</p>
+        </div>
+        <svg class="w-12 h-12 drop-shadow-lg" viewBox="0 0 24 24"><path d="M12 22s-8-6.5-8-12.5a8 8 0 0 1 16 0C20 15.5 12 22 12 22z" fill="#EA580C"/><circle cx="12" cy="9.5" r="3" fill="#fff"/></svg>
+      </div>
+      <div class="absolute bottom-4 left-4 right-4 flex flex-col sm:flex-row gap-2">
+        <a href="https://2gis.kz/taraz/search/%D0%A1%D1%8B%D0%BF%D0%B0%D1%82%D0%B0%D0%B9%20%D0%B1%D0%B0%D1%82%D1%8B%D1%80%D0%B0%202%D0%9A" target="_blank" rel="noopener" class="flex-1 text-center bg-white hover:bg-slate-50 font-bold px-4 py-3 rounded-xl shadow transition">Открыть в 2ГИС</a>
+        <a href="https://yandex.kz/maps/?text=%D0%A2%D0%B0%D1%80%D0%B0%D0%B7%2C%20%D1%83%D0%BB.%20%D0%A1%D1%8B%D0%BF%D0%B0%D1%82%D0%B0%D0%B9%20%D0%B1%D0%B0%D1%82%D1%8B%D1%80%D0%B0%2C%202%D0%9A" target="_blank" rel="noopener" class="flex-1 text-center bg-white hover:bg-slate-50 font-bold px-4 py-3 rounded-xl shadow transition">Открыть в Яндекс Картах</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="bg-graphite-900 text-slate-400 py-10">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row gap-6 md:items-center md:justify-between text-sm">
+    <div>
+      <p class="font-extrabold text-white text-base">Krysha Stroy Taraz</p>
+      <p class="mt-1">Еврозаборы и кровельные материалы от производителя · г. Тараз, ул. Сыпатай батыра, 2К</p>
+    </div>
+    <div class="flex flex-wrap gap-x-6 gap-y-2 font-semibold">
+      <a href="#catalog" class="hover:text-white">Каталог</a>
+      <a href="#calculator" class="hover:text-white">Калькулятор</a>
+      <a href="#works" class="hover:text-white">Наши работы</a>
+      <a href="#contacts" class="hover:text-white">Контакты</a>
+    </div>
+    <p>© <span id="year"></span> Krysha Stroy Taraz. Цены на сайте не являются публичной офертой.</p>
+  </div>
+</footer>
+
+<!-- Плавающая кнопка WhatsApp -->
+<a data-wa="float" href="#" class="wa-pulse fixed z-40 right-4 bottom-4 sm:right-6 sm:bottom-6 w-16 h-16 rounded-full bg-wa hover:bg-wa-700 text-white flex items-center justify-center shadow-xl shadow-green-900/30 transition isolate" aria-label="Написать в WhatsApp">
+  <svg class="w-8 h-8" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.8h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.9-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.89 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.16-3.48-8.41"/></svg>
+</a>
+
+<!-- Модальное окно «Узнать цену» -->
+<div id="priceModal" class="fixed inset-0 z-50 hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div data-close class="absolute inset-0 bg-slate-900/60 backdrop-blur-sm"></div>
+  <div class="relative min-h-full flex items-end sm:items-center justify-center p-0 sm:p-6">
+    <div class="relative w-full sm:max-w-md bg-white rounded-t-[28px] sm:rounded-[28px] p-7 sm:p-8 shadow-2xl">
+      <button data-close class="absolute right-4 top-4 w-10 h-10 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center" aria-label="Закрыть">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.4" viewBox="0 0 24 24"><path stroke-linecap="round" d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+      <p class="text-terra font-bold uppercase tracking-widest text-xs">Узнать цену</p>
+      <h3 id="modalTitle" class="mt-2 text-2xl font-extrabold pr-10">Товар</h3>
+      <p class="mt-2 text-slate-600">Укажите, сколько нужно, — менеджер пришлет актуальную цену и сроки в WhatsApp.</p>
+      <form id="modalForm" class="mt-6 space-y-4" novalidate>
+        <div>
+          <label for="mName" class="block text-sm font-bold mb-1.5">Ваше имя</label>
+          <input id="mName" type="text" placeholder="Например, Ерлан" class="w-full border-2 border-slate-200 rounded-xl px-4 py-3 focus:border-terra outline-none font-semibold">
+        </div>
+        <div>
+          <label for="mQty" class="block text-sm font-bold mb-1.5">Объем (необязательно)</label>
+          <input id="mQty" type="text" placeholder="Например, 40 метров или 120 м²" class="w-full border-2 border-slate-200 rounded-xl px-4 py-3 focus:border-terra outline-none font-semibold">
+        </div>
+        <a id="modalSend" href="#" class="w-full inline-flex justify-center items-center gap-2 bg-wa hover:bg-wa-700 text-white font-bold text-lg px-6 py-4 rounded-2xl transition">Узнать цену в WhatsApp</a>
+        <p class="text-center text-sm text-slate-500">или позвоните: <a href="tel:+77057330066" class="font-bold text-graphite">+7 (705) 733-00-66</a></p>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  /* ---------- НАСТРОЙКИ: номер и цены (меняйте здесь) ---------- */
+  var WA_PHONE = '77057330066';
+  var PRICES = {
+    fence: {
+      panelWidth: 2,               // ширина пролета, м
+      plate: 3500,                 // плита 2000×500 мм, серая, ₸/шт
+      platePaint: 1200,            // покраска плиты, ₸/шт
+      post15: 6500,                // столб для забора 1,5 м, ₸/шт
+      post20: 8000,                // столб для забора 2,0 м, ₸/шт
+      postPaint: 1000,             // покраска столба, ₸/шт
+      textureK: { 'Сланец / Дикий камень': 1, 'Кирпичная кладка': 1, 'Ажурный верх': 1.1, 'Классика': 0.95 },
+      install: 4500,               // монтаж под ключ, ₸/пог. м
+      delivery: 15000              // доставка по Таразу, ₸
+    },
+    roof: {
+      tile: 4200,                  // металлочерепица, ₸/м²
+      prof: 3300,                  // профнастил, ₸/м²
+      waste: 1.12,                 // запас на подрезку и нахлест
+      extrasK: 0.15,               // доборные элементы — доля от стоимости листа
+      install: 2500                // монтаж кровли, ₸/м²
+    }
+  };
+
+  /* ---------- Утилиты ---------- */
+  function $(s, r) { return (r || document).querySelector(s); }
+  function $$(s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); }
+  function fmt(n) { return Math.round(n).toLocaleString('ru-RU').replace(/,/g, ' '); }
+  function roundTo(n, step) { return Math.round(n / step) * step; }
+  function waLink(text) { return 'https://wa.me/' + WA_PHONE + '?text=' + encodeURIComponent(text); }
+
+  /* ---------- Статичные ссылки WhatsApp ---------- */
+  var WA_TEXTS = {
+    header: 'Здравствуйте! Пишу с сайта Krysha Stroy Taraz. Хочу проконсультироваться по еврозаборам / кровле.',
+    price: 'Здравствуйте! Пришлите, пожалуйста, актуальный прайс на еврозаборы и кровельные материалы (металлочерепица, профнастил).',
+    catalog: 'Здравствуйте! Пришлите, пожалуйста, каталог цветов RAL для кровли и варианты окраски еврозаборов.',
+    zamer: 'Здравствуйте! Хочу вызвать замерщика бесплатно. Мой адрес: ',
+    contacts: 'Здравствуйте! Пишу с сайта Krysha Stroy Taraz.',
+    float: 'Здравствуйте! Пишу с сайта Krysha Stroy Taraz. Подскажите, пожалуйста…'
+  };
+  $$('[data-wa]').forEach(function (a) {
+    a.href = waLink(WA_TEXTS[a.getAttribute('data-wa')] || WA_TEXTS.contacts);
+    a.target = '_blank';
+    a.rel = 'noopener';
+  });
+
+  /* ---------- Мобильное меню ---------- */
+  var burger = $('#burger'), menu = $('#mobileMenu');
+  burger.addEventListener('click', function () {
+    var open = menu.classList.toggle('hidden') === false;
+    burger.setAttribute('aria-expanded', String(open));
+  });
+  $$('#mobileMenu a').forEach(function (a) { a.addEventListener('click', function () { menu.classList.add('hidden'); burger.setAttribute('aria-expanded', 'false'); }); });
+
+  /* ---------- Калькулятор ---------- */
+  var calcType = 'fence';
+  var lenRange = $('#fenceLength'), lenNum = $('#fenceLengthNum');
+  var resultList = $('#resultList'), totalEl = $('#totalSum'), sendBtn = $('#sendCalc');
+
+  $$('.calc-tab').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      calcType = btn.getAttribute('data-calc-tab');
+      $$('.calc-tab').forEach(function (b) { b.classList.toggle('tab-active', b === btn); b.setAttribute('aria-selected', String(b === btn)); });
+      $('#calc-fence').classList.toggle('hidden', calcType !== 'fence');
+      $('#calc-roof').classList.toggle('hidden', calcType !== 'roof');
+      calc();
+    });
+  });
+
+  function updateRangeFill() {
+    var p = (lenRange.value - lenRange.min) / (lenRange.max - lenRange.min) * 100;
+    lenRange.style.background = 'linear-gradient(90deg,#EA580C ' + p + '%,#E2E8F0 ' + p + '%)';
+  }
+  lenRange.addEventListener('input', function () { lenNum.value = lenRange.value; updateRangeFill(); calc(); });
+  lenNum.addEventListener('input', function () {
+    var v = parseInt(lenNum.value, 10);
+    if (!isNaN(v)) { lenRange.value = Math.min(200, Math.max(10, v)); updateRangeFill(); calc(); }
+  });
+  lenNum.addEventListener('blur', function () {
+    var v = parseInt(lenNum.value, 10);
+    if (isNaN(v)) v = 50;
+    v = Math.min(200, Math.max(10, v));
+    lenNum.value = v; lenRange.value = v; updateRangeFill(); calc();
+  });
+
+  $$('#calc-fence input, #calc-fence select, #calc-roof input').forEach(function (el) {
+    if (el === lenRange || el === lenNum) return;
+    el.addEventListener('input', calc);
+    el.addEventListener('change', calc);
+  });
+  $$('.area-chip').forEach(function (c) {
+    c.addEventListener('click', function () { $('#roofArea').value = c.getAttribute('data-area'); calc(); });
+  });
+
+  function row(label, value, strong) {
+    return '<div class="flex justify-between gap-4"><dt class="text-slate-300">' + label + '</dt><dd class="' + (strong ? 'font-extrabold' : 'font-bold') + ' text-right">' + value + '</dd></div>';
+  }
+
+  function calc() {
+    var html = '', total = 0, msg = '';
+    if (calcType === 'fence') {
+      var P = PRICES.fence;
+      var length = Math.min(200, Math.max(10, parseInt(lenRange.value, 10) || 50));
+      var height = parseFloat(($('input[name=fenceHeight]:checked') || {}).value || 2);
+      var rows = height === 1.5 ? 3 : 4;
+      var texture = $('#fenceTexture').value;
+      var install = $('#fenceInstall').checked;
+      var paint = $('#fencePaint').checked;
+
+      var spans = Math.ceil(length / P.panelWidth);
+      var plates = spans * rows;
+      var posts = spans + 1;
+      var k = P.textureK[texture] || 1;
+
+      var platesSum = plates * P.plate * k;
+      var postsSum = posts * (height === 1.5 ? P.post15 : P.post20);
+      var paintSum = paint ? plates * P.platePaint + posts * P.postPaint : 0;
+      var installSum = install ? length * P.install : 0;
+      total = roundTo(platesSum + postsSum + paintSum + installSum + P.delivery, 1000);
+
+      html += row('Длина / высота', length + ' м · ' + String(height).replace('.', ',') + ' м');
+      html += row('Текстура', texture);
+      html += row('Пролетов', spans + ' шт');
+      html += row('Плит 2000×500 мм', plates + ' шт');
+      html += row('Столбов', posts + ' шт');
+      html += row('Установка под ключ', install ? 'да' : 'нет');
+      html += row('Покраска', paint ? 'да' : 'нет (серые)');
+
+      msg = 'Здравствуйте! Сделал(а) расчет еврозабора на сайте Krysha Stroy Taraz:\n' +
+        '• Длина: ' + length + ' м\n' +
+        '• Высота: ' + String(height).replace('.', ',') + ' м\n' +
+        '• Текстура: ' + texture + '\n' +
+        '• Плит 2000×500 мм: ' + plates + ' шт, столбов: ' + posts + ' шт\n' +
+        '• Установка под ключ: ' + (install ? 'да' : 'нет') + '\n' +
+        '• Покраска: ' + (paint ? 'да' : 'нет') + '\n' +
+        '• Предварительная сумма: ~' + fmt(total) + ' ₸\n\n' +
+        'Хочу уточнить точную стоимость и записаться на бесплатный замер.';
+    } else {
+      var R = PRICES.roof;
+      var area = parseFloat(String($('#roofArea').value).replace(',', '.'));
+      if (isNaN(area) || area <= 0) area = 0;
+      var type = ($('input[name=roofType]:checked') || {}).value || 'tile';
+      var extras = $('#roofExtras').checked;
+      var rInstall = $('#roofInstall').checked;
+      var typeName = type === 'tile' ? 'Металлочерепица' : 'Профнастил';
+
+      var matArea = Math.ceil(area * R.waste);
+      var matSum = matArea * (type === 'tile' ? R.tile : R.prof);
+      var extrasSum = extras ? matSum * R.extrasK : 0;
+      var instSum = rInstall ? area * R.install : 0;
+      total = area > 0 ? roundTo(matSum + extrasSum + instSum, 1000) : 0;
+
+      html += row('Тип кровли', typeName);
+      html += row('Площадь крыши', fmt(area) + ' м²');
+      html += row('Материал с запасом', fmt(matArea) + ' м²');
+      html += row('Доборные элементы', extras ? 'да' : 'нет');
+      html += row('Монтаж', rInstall ? 'да' : 'нет');
+
+      msg = 'Здравствуйте! Сделал(а) расчет кровли на сайте Krysha Stroy Taraz:\n' +
+        '• Тип: ' + typeName + '\n' +
+        '• Площадь крыши: ' + fmt(area) + ' м² (с запасом ' + fmt(matArea) + ' м²)\n' +
+        '• Доборные элементы (коньки, ветровые): ' + (extras ? 'да' : 'нет') + '\n' +
+        '• Монтаж: ' + (rInstall ? 'да' : 'нет') + '\n' +
+        '• Предварительная сумма: ~' + fmt(total) + ' ₸\n\n' +
+        'Подскажите по цветам RAL и толщине металла, хочу точный расчет.';
+    }
+    resultList.innerHTML = html;
+    totalEl.textContent = fmt(total);
+    sendBtn.href = waLink(msg);
+    sendBtn.target = '_blank';
+    sendBtn.rel = 'noopener';
+  }
+  updateRangeFill();
+  calc();
+
+  /* ---------- Каталог ---------- */
+  var PRODUCTS = [
+    { cat: 'fence', name: 'Сланец / Дикий камень', fill: 'url(#p-stone)', size: '2000×500 мм', desc: 'Рельеф натурального камня — самый популярный вариант для частных домов.', tag: 'Хит продаж' },
+    { cat: 'fence', name: 'Кирпичная кладка', fill: 'url(#p-brick-gray)', size: '2000×500 мм', desc: 'Выглядит как кирпичный забор, а стоит в разы дешевле.', tag: '' },
+    { cat: 'fence', name: 'Ажурный верх', fill: 'ajur', size: '2000×500 мм', desc: 'Декоративная верхняя плита с узором — легкость и красота.', tag: 'Декор' },
+    { cat: 'fence', name: 'Классика', fill: 'url(#p-classic)', size: '2000×500 мм', desc: 'Гладкая поверхность — идеально под покраску в любой цвет.', tag: '' },
+    { cat: 'roof', name: 'Металлочерепица Монтеррей', fill: 'url(#p-tile)', size: 'Толщина 0,45–0,5 мм', desc: 'Классический профиль черепицы. Цвета RAL 3005, 8017, 7024, 6005.', tag: 'Хит продаж' },
+    { cat: 'roof', name: 'Профнастил С-8 / С-21', fill: 'url(#p-prof)', size: 'Толщина 0,4–0,5 мм', desc: 'Для кровли, навесов, гаражей и заборов. Оцинкованный и окрашенный.', tag: '' },
+    { cat: 'roof', name: 'Доборные элементы и водостоки', fill: 'dobor', size: 'Под любой цвет кровли', desc: 'Коньки, ветровые и карнизные планки, ендовы, желоба и трубы.', tag: '' },
+    { cat: 'roof', name: 'Металлочерепица — цвет графит', fill: 'url(#p-tile-graphite)', size: 'RAL 7024, 0,5 мм', desc: 'Строгий современный цвет, который не выгорает на солнце.', tag: 'Новинка' }
+  ];
+
+  function productArt(p) {
+    if (p.fill === 'ajur') {
+      return '<svg viewBox="0 0 320 200" class="w-full h-full"><rect width="320" height="200" fill="#E2E8F0"/>' +
+        '<rect x="20" y="70" width="280" height="130" fill="url(#p-classic)"/>' +
+        '<rect x="20" y="20" width="280" height="50" fill="#B8BEC6"/>' +
+        '<g fill="#E2E8F0">' + [0,1,2,3,4,5,6].map(function (i) { var x = 34 + i * 39; return '<ellipse cx="' + (x + 12) + '" cy="45" rx="12" ry="16"/>'; }).join('') + '</g>' +
+        '<g fill="none" stroke="#9CA3AF" stroke-width="2">' + [0,1,2,3,4,5,6].map(function (i) { var x = 34 + i * 39; return '<ellipse cx="' + (x + 12) + '" cy="45" rx="12" ry="16"/>'; }).join('') + '</g>' +
+        '<path d="M20 70h280M20 135h280" stroke="#9CA3AF" stroke-width="1.5"/><rect x="6" y="10" width="14" height="190" fill="#6B7280"/><rect x="300" y="10" width="14" height="190" fill="#6B7280"/></svg>';
+    }
+    if (p.fill === 'dobor') {
+      return '<svg viewBox="0 0 320 200" class="w-full h-full"><rect width="320" height="200" fill="#E2E8F0"/>' +
+        '<polygon points="40,150 160,60 280,150" fill="url(#p-tile)"/><path d="M30 156 160 58 290 156" fill="none" stroke="#6E1F0D" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>' +
+        '<rect x="30" y="152" width="260" height="10" rx="4" fill="#475569"/><path d="M285 158v40" stroke="#475569" stroke-width="10"/></svg>';
+    }
+    var isFence = p.cat === 'fence';
+    return '<svg viewBox="0 0 320 200" class="w-full h-full"><rect width="320" height="200" fill="#E2E8F0"/>' +
+      (isFence
+        ? '<rect x="20" y="20" width="280" height="180" fill="' + p.fill + '"/><path d="M20 65h280M20 110h280M20 155h280" stroke="rgba(55,65,81,.55)" stroke-width="2"/><rect x="6" y="10" width="14" height="190" fill="#6B7280"/><rect x="300" y="10" width="14" height="190" fill="#6B7280"/>'
+        : '<rect width="320" height="200" fill="' + p.fill + '"/><rect width="320" height="200" fill="url(#shine)" opacity=".0"/>') +
+      '</svg>';
+  }
+
+  function renderCatalog(filter) {
+    var grid = $('#catalogGrid');
+    grid.innerHTML = PRODUCTS.filter(function (p) { return filter === 'all' || p.cat === filter; }).map(function (p, i) {
+      return '<article class="group bg-white border border-slate-200 rounded-3xl overflow-hidden hover:shadow-xl hover:-translate-y-1 transition duration-300 flex flex-col">' +
+        '<div class="relative aspect-[16/10] overflow-hidden">' + productArt(p) +
+          (p.tag ? '<span class="absolute top-3 left-3 bg-terra text-white text-xs font-bold px-2.5 py-1 rounded-full">' + p.tag + '</span>' : '') +
+          '<span class="absolute top-3 right-3 bg-white/90 text-graphite text-xs font-bold px-2.5 py-1 rounded-full">' + (p.cat === 'fence' ? 'Еврозабор' : 'Кровля') + '</span>' +
+        '</div>' +
+        '<div class="p-5 flex flex-col flex-1">' +
+          '<h3 class="font-extrabold text-lg leading-snug">' + p.name + '</h3>' +
+          '<p class="mt-1 text-sm font-bold text-terra">' + p.size + '</p>' +
+          '<p class="mt-2 text-sm text-slate-600 flex-1">' + p.desc + '</p>' +
+          '<button type="button" data-product="' + p.name + '" data-cat="' + p.cat + '" class="price-btn mt-5 w-full bg-graphite hover:bg-terra text-white font-bold py-3 rounded-xl transition">Узнать цену</button>' +
+        '</div></article>';
+    }).join('');
+    $$('.price-btn', grid).forEach(function (b) { b.addEventListener('click', function () { openModal(b.getAttribute('data-product'), b.getAttribute('data-cat')); }); });
+  }
+  $$('.cat-tab').forEach(function (t) {
+    t.addEventListener('click', function () {
+      $$('.cat-tab').forEach(function (x) { x.classList.toggle('tab-active', x === t); });
+      renderCatalog(t.getAttribute('data-cat'));
+    });
+  });
+  renderCatalog('all');
+
+  /* ---------- Модальное окно ---------- */
+  var modal = $('#priceModal'), modalProduct = '', modalCat = '', lastFocus = null;
+  function updateModalLink() {
+    var name = $('#mName').value.trim(), qty = $('#mQty').value.trim();
+    var text = 'Здравствуйте!' + (name ? ' Меня зовут ' + name + '.' : '') +
+      ' Хочу узнать цену: ' + (modalCat === 'fence' ? 'еврозабор «' + modalProduct + '» (плита 2000×500 мм)' : modalProduct) + '.' +
+      (qty ? ' Нужный объем: ' + qty + '.' : '') + ' Пишу с сайта Krysha Stroy Taraz.';
+    var a = $('#modalSend');
+    a.href = waLink(text); a.target = '_blank'; a.rel = 'noopener';
+  }
+  function openModal(product, cat) {
+    modalProduct = product; modalCat = cat; lastFocus = document.activeElement;
+    $('#modalTitle').textContent = product;
+    $('#mQty').placeholder = cat === 'fence' ? 'Например, 40 погонных метров' : 'Например, 120 м²';
+    updateModalLink();
+    modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+    setTimeout(function () { $('#mName').focus(); }, 50);
+  }
+  function closeModal() {
+    modal.classList.add('hidden');
+    document.body.style.overflow = '';
+    if (lastFocus) lastFocus.focus();
+  }
+  $$('[data-close]', modal).forEach(function (el) { el.addEventListener('click', closeModal); });
+  $('#mName').addEventListener('input', updateModalLink);
+  $('#mQty').addEventListener('input', updateModalLink);
+  $('#modalForm').addEventListener('submit', function (e) { e.preventDefault(); });
+  $('#modalSend').addEventListener('click', function () { setTimeout(closeModal, 300); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !modal.classList.contains('hidden')) closeModal(); });
+
+  /* ---------- Галерея работ ---------- */
+  var WORKS = [
+    { title: 'Еврозабор «Дикий камень», 64 м', place: 'мкр. Карасу', type: 'Еврозабор', roof: 'url(#p-tile)', fence: 'url(#p-stone)', wall: '#F1E9DC', sky: ['#7DD3FC', '#E0F2FE'] },
+    { title: 'Кровля из металлочерепицы, 180 м²', place: 'ул. Толе би', type: 'Кровля', roof: 'url(#p-tile-graphite)', fence: null, wall: '#E7E5E4', sky: ['#93C5FD', '#EFF6FF'] },
+    { title: 'Забор «Кирпич» с покраской, 42 м', place: 'мкр. Талас', type: 'Еврозабор', roof: 'url(#p-tile-green)', fence: 'url(#p-brick)', wall: '#FEF3C7', sky: ['#FDBA74', '#FFF7ED'] },
+    { title: 'Дом под ключ: кровля + забор', place: 'с. Аса', type: 'Комплекс', roof: 'url(#p-tile)', fence: 'url(#p-brick-gray)', wall: '#F5F5F4', sky: ['#7DD3FC', '#F0F9FF'] },
+    { title: 'Профнастил С-21 на навес и гараж', place: 'мкр. Мынбулак', type: 'Кровля', roof: 'url(#p-prof)', fence: 'url(#p-classic)', wall: '#E2E8F0', sky: ['#A5B4FC', '#EEF2FF'] },
+    { title: 'Ажурный еврозабор, 2,0 м, 88 м', place: 'Жамбылский р-н', type: 'Еврозабор', roof: 'url(#p-tile-graphite)', fence: 'url(#p-classic)', wall: '#FAFAF9', sky: ['#67E8F9', '#ECFEFF'], ajur: true }
+  ];
+  function workArt(w, i) {
+    var gid = 'sky' + i;
+    var fence = w.fence ? (
+      '<rect x="0" y="190" width="400" height="70" fill="' + w.fence + '"/>' +
+      (w.ajur ? '<g fill="' + w.sky[1] + '">' + [0,1,2,3,4,5,6,7,8].map(function (j) { return '<ellipse cx="' + (22 + j * 45) + '" cy="200" rx="8" ry="7"/>'; }).join('') + '</g>' : '') +
+      '<path d="M0 213h400M0 236h400" stroke="rgba(55,65,81,.45)" stroke-width="1.5"/>' +
+      '<g fill="#6B7280">' + [0,1,2,3,4].map(function (j) { return '<rect x="' + (j * 98 - 4) + '" y="182" width="12" height="80"/>'; }).join('') + '</g>'
+    ) : '<rect x="0" y="230" width="400" height="30" fill="#A3B18A"/>';
+    return '<svg viewBox="0 0 400 260" class="w-full h-full group-hover:scale-105 transition duration-500">' +
+      '<defs><linearGradient id="' + gid + '" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="' + w.sky[0] + '"/><stop offset="1" stop-color="' + w.sky[1] + '"/></linearGradient></defs>' +
+      '<rect width="400" height="260" fill="url(#' + gid + ')"/>' +
+      '<path d="M0 200 Q120 170 220 190 T400 180 V260 H0z" fill="#BFC9B0"/>' +
+      '<rect x="110" y="120" width="180" height="110" fill="' + w.wall + '"/>' +
+      '<polygon points="92,126 200,52 308,126" fill="' + w.roof + '"/>' +
+      '<path d="M88 128 200 50 312 128" fill="none" stroke="rgba(30,41,59,.65)" stroke-width="4" stroke-linejoin="round"/>' +
+      '<rect x="135" y="145" width="40" height="36" rx="3" fill="#7DD3FC" stroke="#fff" stroke-width="4"/>' +
+      '<rect x="225" y="145" width="40" height="36" rx="3" fill="#7DD3FC" stroke="#fff" stroke-width="4"/>' +
+      fence +
+      '</svg>';
+  }
+  $('#worksGrid').innerHTML = WORKS.map(function (w, i) {
+    return '<figure class="fade-up group relative rounded-3xl overflow-hidden bg-white border border-slate-200 shadow-sm hover:shadow-xl transition">' +
+      '<div class="aspect-[4/3] overflow-hidden">' + workArt(w, i) + '</div>' +
+      '<figcaption class="p-5 flex items-start justify-between gap-3">' +
+        '<div><p class="font-extrabold leading-snug">' + w.title + '</p><p class="text-sm text-slate-500 mt-1 flex items-center gap-1"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/></svg>Тараз, ' + w.place + '</p></div>' +
+        '<span class="shrink-0 text-xs font-bold bg-terra-50 text-terra-700 px-2.5 py-1 rounded-full">' + w.type + '</span>' +
+      '</figcaption></figure>';
+  }).join('');
+
+  /* ---------- Анимация появления ---------- */
+  var items = $$('.fade-up');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('visible'); io.unobserve(en.target); } });
+    }, { threshold: 0.12 });
+    items.forEach(function (el) { io.observe(el); });
+  } else {
+    items.forEach(function (el) { el.classList.add('visible'); });
+  }
+
+  $('#year').textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
